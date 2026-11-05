@@ -1,0 +1,19 @@
+{
+  "name": "bltc",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bltc",
+      "database_id": "b151bb12-0c1f-46c6-980e-6fb8b9629172"
+    }
+  ],
+  "observability": { "enabled": true }
+}
